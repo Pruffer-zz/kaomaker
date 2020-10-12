@@ -9,19 +9,19 @@
 		crossorigin="anonymous"></script>
 	<script>
     		$(document).ready(function(){
-			    $('.item').click(function() {
-			    document.getElementById('result').innerHTML = document.getElementById('result').innerHTML.concat($(this).attr('id'));
-                });
-                $('.clear').click(function() {
-			    document.getElementById('result').innerHTML = "&nbsp;";
-                });
-                $('.result').bind('dblclick',
-			    function(){
-				$(this).attr('contentEditable',true);
-                });
-                $('.space').click(function() {
-			document.getElementById('result').innerHTML = document.getElementById('result').innerHTML.concat(" ");
-                });
+			$('.item').click(function() {
+				document.getElementById('result').innerHTML = document.getElementById('result').innerHTML.concat($(this).attr('id'));
+			});
+			$('.clear').click(function() {
+				document.getElementById('result').innerHTML = "&nbsp;";
+			});
+			$('.result').bind('dblclick',
+				function(){
+					$(this).attr('contentEditable',true);
+			});
+			$('.space').click(function() {
+				document.getElementById('result').innerHTML = document.getElementById('result').innerHTML.concat(" ");
+			});
     		});
 	</script>
 	<script>
